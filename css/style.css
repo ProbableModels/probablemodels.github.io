@@ -7,7 +7,13 @@ html {
     background-image: url(/images/cardbackground-slim.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.8;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+}
+
+.banner-padding {
     height: 400px;
 }
 
@@ -18,4 +24,5 @@ html {
 
 .logo {
     filter: drop-shadow(0px 0px 7px #fff);
+    opacity: 0.9;
 }
