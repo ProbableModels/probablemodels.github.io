@@ -1,125 +1,291 @@
 <!DOCTYPE html>
-<html lang=en>
+<html class="has-navbar-fixed-top" id="sec_home">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Probable Models</title>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Favicons from https://realfavicongenerator.net/ -->
+      <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+      <link rel="manifest" href="/images/favicon/site.webmanifest">
+      <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#fa7c91">
+      <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+      <meta name="msapplication-TileColor" content="#fa7c91">
+      <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+      <meta name="theme-color" content="#fa7c91">
+
+      <title>Probable Models</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+      <!-- Bulma Version 0.7.2-->
+      <link rel="stylesheet" href="css/bulma.css" />
+      <link rel="stylesheet" type="text/css" href="css/hero.css">
+      <link rel="stylesheet" type="text/css" href="css/mystyles.css">
+      <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-
-  <section class="section hero banner banner-padding is-vcenter">
-    <div class="hero-body">
+    <nav class="navbar is-info is-fixed-top">
       <div class="container">
-          <img class='logo' src="images/logo_Primary.png" alt='Probable Models'>
+        <div class="navbar-brand">
+          <a class="navbar-item">
+             <img src="images/logo_triangle_tight.png" alt="Logo">
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuItems">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuItems" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" id="nav_home" href="#sec_home">
+              Home
+            </a>
+            <a class="navbar-item" id="nav_mission" href="#sec_mission">
+              Mission
+            </a>
+            <!--
+            <a class="navbar-item" id="nav_services" href="#sec_services">
+              Services
+            </a>
+            -->
+            <a class="navbar-item" id="nav_team" href="#sec_team">
+              Team
+            </a>
+            <!--
+            <a class="navbar-item" id="nav_partnersclients" href="#sec_partnersclients">
+              Partners/Clients
+            </a>
+            -->
+            <a class="navbar-item" id="nav_contact" href="#sec_contact">
+              Contact Us
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="section banner-padding">
-  </section>
+    </nav>
 
-
-  <section class="section columns is-multiline">
-    <!-- mike -->
-    <div class="column is-half">
-    <div class="box">
-      <article class="media">
-        <div class="media-left">
-          <figure class="image is-64x64">
-            <img src="images/mike.jpg" alt="Michael Skirpan">
-          </figure>
+    <section class="hero is-info is-medium">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">
+              <img src="images/logo_primary_tight.png">
+          </p>
+          <p class="subtitle">
+              Helping to make more ethical futures more probable
+          </p>
         </div>
-        <div class="media-content">
-          <div class="content">
-              <strong>Michael Skirpan</strong> <small><a href="http://mwskirpan.com/">mwskirpan.com</a></small> 
-              <br>
-                <p>Michael is an ethicist, writer, artist, educator, and
-                concerned citizen based out of Pittsburgh, PA. He received his
-                PhD from CU-Boulder's Department of Computer Science in Fall
-                2017. His thesis focused on the use of socio-technical
-                narrative as a way of communicating, comprehending, teaching,
-                and debating the ethics of new and near-future technologies.
-                His research spans topics such as design fiction, technology
-                ethics, classroom design, engineering ethics pedagogy, futures,
-                and risk. </p>
+      </div>
+    </section>
 
-                <p>He is now the executive director at Community Forge, a
-                mission-driven organization dedicated to rehabbing the Johnston
-                Elementary School in Wilkinsburg, PA into a community centered
-                focused on education, arts, civics, and local business
-                development. His technical work is now done through a social
-                enterprise, Probable Models, that focuses on supporting and
-                exploring ethical technologies.</p>
+    <section id="sec_mission" class="section">
+      <div class="container">
+        <h1 class="title">Our Mission</h1>
+        <article class="message is-primary">
+          <div class="message-body">
+              To <b>explore</b> technologies that could benefit our communities and world;<br>
+              To <b>support</b> purpose-driven organizations in using technology to affect good;<br>
+              To <b>facilitate</b> conversations that allow the impacts of technology to be better understood;<br>
+              To <b>raise awareness</b> of the ethical implications of technological choices and advancements;<br>
+              To <b>create new standards</b> for how individuals and commercial enterprises can be responsible and ethical with technology;<br>
+              To <b>improve</b> the lives of those we work with and the communities we work in;<br>
+              To <b>promote</b> creative expression and open standards within technical communities.
           </div>
-          <nav class="level is-mobile">
-            <div class="level-left">
-              <a class="level-item" href="mailto:mike@probablemodels.com">
-                <span class="icon is-small"><i class="far fa-envelope"></i></span>
-              </a>
-              <a class="level-item" href="https://github.com/wannabecitizen">
-                <span class="icon is-small"><i class="fab fa-github"></i></span>
-              </a>
-              <a class="level-item" href="http://mwskirpan.com/">
-                <span class="icon is-small"><i class="fas fa-desktop"></i></span>
-              </a>
+        </article>
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <p class="title is-5">Community Members</p>
+              <p class="subtitle"> ...  </p>
             </div>
-          </nav>
-        </div>
-        <div class="media-right"></div>
-      </article>
-    </div>
-    </div>
-    <!-- /mike -->
-
-    <!-- micha -->
-    <div class="column is-half">
-    <div class="box">
-      <article class="media">
-        <div class="media-left">
-          <figure class="image is-64x64">
-            <img src="images/micha.jpg" alt="Micha Gorelick">
-          </figure>
-        </div>
-        <div class="media-content">
-          <div class="content">
-              <strong>Micha Gorelick</strong> <small><a href="http://micha.codes/">micha.codes</a></small> 
-              <br>
-                <p>Micha Gorelick was the first man on Mars in 2023 and won the
-                Nobel prize in 2046 for his contributions to time travel. In a
-                moment of rage after seeing the deplorable uses of his new
-                technology, he traveled back in time to 2012 and convinced
-                himself to leave his Physics PhD program and follow his love of
-                data. First he applied his knowledge of real time computing and
-                data science to the dataset at bitly. Then, after realizing he
-                wanted to help people understand the technology of the future,
-                he wrote "High Performanc Python" and helped start an applied
-                machine learning lab, Fast Forward Labs, as a resident mad
-                scientist. There, he worked on many issues from deep learning
-                to performant stream algorithms. A monument celebrating his life
-                can be found in Central Park, 1857.</p>
           </div>
-          <nav class="level is-mobile">
-            <div class="level-left">
-              <a class="level-item" href="mailto:micha@probablemodels.com">
-                <span class="icon is-small"><i class="far fa-envelope"></i></span>
-              </a>
-              <a class="level-item" href="https://github.com/mynameisfiber">
-                <span class="icon is-small"><i class="fab fa-github"></i></span>
-              </a>
-              <a class="level-item" href="http://micha.codes/">
-                <span class="icon is-small"><i class="fas fa-desktop"></i></span>
-              </a>
+          <div class="column">
+            <div class="box">
+              <p class="title is-5">Practitioners</p>
+              <p class="subtitle"> ...  </p>
             </div>
-          </nav>
+          </div>
+          <div class="column">
+            <div class="box">
+              <p class="title is-5">Decision Makers</p>
+              <p class="subtitle"> ...  </p>
+            </div>
+          </div>
         </div>
-        <div class="media-right"></div>
-      </article>
-    </div>
-    </div>
-    <!-- /micha -->
+      </div>
+    </section>
 
-  </section>
+
+    <section class="section hero is-info is-bold" id="sec_team">
+      <div class="container">
+        <h1 class='title'>Our Team</h1>
+        <div class="box">
+          <article class="media is-block-mobile">
+            <div class="media-left">
+              <figure class="image">
+                <img src="images/mike.jpg" alt="Michael Skirpan">
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                  <strong class='is-size-4'>Michael Skirpan</strong> <small><a href="http://mwskirpan.com/">mwskirpan.com</a></small> 
+                  <br>
+                    <p>Michael is an ethicist, writer, artist, educator, and
+                    concerned citizen based out of Pittsburgh, PA. He received his
+                    PhD from CU-Boulder's Department of Computer Science in Fall
+                    2017. His thesis focused on the use of socio-technical
+                    narrative as a way of communicating, comprehending, teaching,
+                    and debating the ethics of new and near-future technologies.
+                    His research spans topics such as design fiction, technology
+                    ethics, classroom design, engineering ethics pedagogy, futures,
+                    and risk. </p>
+
+                    <p>He is now the executive director at Community Forge, a
+                    mission-driven organization dedicated to rehabbing the Johnston
+                    Elementary School in Wilkinsburg, PA into a community centered
+                    focused on education, arts, civics, and local business
+                    development. His technical work is now done through a social
+                    enterprise, Probable Models, that focuses on supporting and
+                    exploring ethical technologies.</p>
+              </div>
+              <nav class="level is-mobile">
+                <div class="level-left">
+                  <a class="level-item" href="mailto:mike@probablemodels.com">
+                    <span class="icon is-small"><svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg><!-- <i class="far fa-envelope"></i> --></span>
+                  </a>
+                  <a class="level-item" href="https://github.com/wannabecitizen">
+                    <span class="icon is-small"><svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> --></span>
+                  </a>
+                  <a class="level-item" href="http://mwskirpan.com/">
+                    <span class="icon is-small"><svg class="svg-inline--fa fa-desktop fa-w-18" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="desktop" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"></path></svg><!-- <i class="fas fa-desktop"></i> --></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </article>
+        </div>
+        <div class="box">
+          <article class="media is-block-mobile">
+            <div class="media-left">
+              <figure class="image">
+                <img src="images/micha.jpg" alt="Micha Gorelick">
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                  <strong class='is-size-4'>Micha Gorelick</strong> <small><a href="http://micha.codes/">micha.codes</a></small> 
+                  <br>
+                    <p>Micha Gorelick was the first man on Mars in 2023 and won the
+                    Nobel prize in 2046 for his contributions to time travel. In a
+                    moment of rage after seeing the deplorable uses of his new
+                    technology, he traveled back in time to 2012 and convinced
+                    himself to leave his Physics PhD program and follow his love of
+                    data. First he applied his knowledge of real time computing and
+                    data science to the dataset at bitly. Then, after realizing he
+                    wanted to help people understand the technology of the future,
+                    he wrote "High Performanc Python" and helped start an applied
+                    machine learning lab, Fast Forward Labs, as a resident mad
+                    scientist. There, he worked on many issues from deep learning
+                    to performant stream algorithms. A monument celebrating his life
+                    can be found in Central Park, 1857.</p>
+              </div>
+              <nav class="level is-mobile">
+                <div class="level-left">
+                  <a class="level-item" href="mailto:micha@probablemodels.com">
+                    <span class="icon is-small"><svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg><!-- <i class="far fa-envelope"></i> --></span>
+                  </a>
+                  <a class="level-item" href="https://github.com/mynameisfiber">
+                    <span class="icon is-small"><svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> --></span>
+                  </a>
+                  <a class="level-item" href="http://micha.codes/">
+                    <span class="icon is-small"><svg class="svg-inline--fa fa-desktop fa-w-18" aria-hidden="true" data-fa-processed="" data-prefix="fas" data-icon="desktop" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"></path></svg><!-- <i class="fas fa-desktop"></i> --></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="sec_contact">
+      <div class="container">
+        <h1 class='title'>Contact Us</h1>
+        <form name="contact_form" action="https://formspree.io/hello@probablemodels.com" method="POST" id="contact-form">
+          <div class="field">
+            <label class="label">Name</label>
+            <p class="control has-icons-left">
+              <input id="contact_name" class="input" placeholder="Full Name" name="name" type="text">
+              <span class="icon is-small is-left">
+                <i class="fa fa-user"></i>
+              </span>
+            </p>
+          </div>
+        
+          <div class="field">
+            <label class="label">Email</label>
+            <p class="control has-icons-left has-icons-right">
+              <input id="contact_email" class="input" placeholder="Full email address" name="email" type="text">
+              <span class="icon is-small is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </p>
+          </div>
+        
+          <div class="field">
+            <label class="label">Organization</label>
+            <p class="control has-icons-left has-icons-right">
+              <input id="contact_organization" class="input" placeholder="Organization or Company" name="organization" type="text">
+              <span class="icon is-small is-left">
+                <i class="fa fa-users"></i>
+              </span>
+            </p>
+          </div>
+        
+          <div class="field">
+            <label class="label">Phone Number</label>
+            <p class="control has-icons-left has-icons-right">
+              <input id="contact_phone" class="input" placeholder="Phone number" name="phone" type="text">
+              <span class="icon is-small is-left">
+                <i class="fa fa-phone"></i>
+              </span>
+            </p>
+          </div>
+        
+          <div class="field">
+            <label class="label">Message</label>
+            <p class="control">
+              <textarea name="contact_message" class="textarea" placeholder="Dear Community Forge..."></textarea>
+            </p>
+          </div>
+        
+          <div class="field is-grouped">
+            <p class="control">
+              <button id="contact_submit" class="button is-primary">Submit</button>
+            </p>
+            <p class="control">
+              <button class="button is-primary">Cancel</button>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br>
+        </p>
+        <p>
+          Probable Models, 2019
+        </p>
+    </footer>
   </body>
 </html>
