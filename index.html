@@ -422,7 +422,8 @@
             this.innerText = newText.substr(0, newText.length - 1) + '0';
           })
         }
-        setInterval(updateTitleGraphs, 100);
+        updateTitleGraphs();
+        setInterval(updateTitleGraphs, 10000);
       }
     
     });
