@@ -2,6 +2,7 @@
 
 // Import a Google Font
 @import url('https://fontlibrary.org/face/poppins')
+@import url('https://fontlibrary.org/face/datalegreya')
 
 // Set your brand colors
 $purple: #8A4D76
@@ -38,8 +39,13 @@ $box-shadow: 0 5px 10px rgba($pink, 0.4), 0 0 0 1px rgba($pink, 0.1)
 $navbar-height: 3.25rem
 $gap: 64px
 
-$divider-font-size: 3rem
+$divider-font-size: 5rem
 $divider-color: $grey-dark
+
+.container h1:nth-of-type(1)
+    font-family: DatalegreyaDot
+    font-size: 4.5rem
+    font-weight: 400
 
 .anchor
     top: -1.25*$gap
@@ -54,7 +60,6 @@ $divider-color: $grey-dark
 // Import only what you need from Bulma
 @import "../node_modules/bulma/bulma.sass"
 @import "../node_modules/bulma-carousel/dist/css/bulma-carousel.sass"
-@import "../node_modules/bulma-divider/dist/css/bulma-divider.sass"
 //@import "../node_modules/bulma/sass/utilities/_all.sass"
 //@import "../node_modules/bulma/sass/base/_all.sass"
 //@import "../node_modules/bulma/sass/elements/button.sass"

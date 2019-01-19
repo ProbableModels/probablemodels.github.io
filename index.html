@@ -24,7 +24,7 @@
       <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
 
       <script type="text/javascript" src="node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
-      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <nav class="navbar is-primary is-fixed-top">
@@ -85,7 +85,7 @@
     <section class="section">
       <a class="anchor" id="sec_mission"></a>
       <div class="container">
-        <div class="is-divider" data-content="Our Mission"></div>
+        <h1 class='title has-text-centered'>Our Mission</h1>
         <article class="message">
           <div class="message-body box">
             <ul class="overhang">
@@ -126,7 +126,7 @@
     <section class="section">
       <a class="anchor" id="sec_pubwork"></a>
       <div class="container is-widescreen">
-        <div class='is-divider' data-content="Public Work"></div>
+        <h1 class='title has-text-centered'>Public Work</h1>
         <div class="columns">
           <div class="column is-8">
             <div class="box has-text-right">
@@ -179,7 +179,7 @@
     <section class="section hero is-primary">
       <a class="anchor" id="sec_team"></a>
       <div class="container">
-        <div class='is-divider is-primary' data-content="Our Team"></div>
+        <h1 class='title has-text-centered'>Our Team</h1>
         <div class="box">
           <article class="media is-block-mobile">
             <div class="media-left">
@@ -273,7 +273,7 @@
     <section class="section hero is-primary">
       <a class='anchor' id="sec_partnersclients"></a>
       <div class="container">
-        <div class="is-divider is-primary" data-content="Partners"></div>
+        <h1 class='title has-text-centered'>Partners</h1>
         <div class="box">
           <div class='carousel carousel-animated carousel-animate-slide' data-size="3" data-autoplay="true">
             <div class='carousel-container'>
@@ -304,9 +304,9 @@
     </section>
 
     <section class="section">
+      <a class='anchor' id="sec_contact"></a>
       <div class="container">
-        <a class='anchor' id="sec_contact"></a>
-        <div class='is-divider' data-content="Contact Us"></div>
+        <h1 class='title has-text-centered'>Contact Us</h1>
         <div class="box">
           <form name="contact_form" action="https://formspree.io/hello@probablemodels.com" method="POST" id="contact-form">
             <div class="field">
@@ -401,6 +401,28 @@
     
           });
         });
+
+        function updateTitleGraphs() {
+          $('h1').each(function() {
+            let chars = this.innerText.toLowerCase().split('');
+            let lastNum = Math.floor(Math.random() * 4);
+            let newChars = [];
+            newNum = function() {
+              let candidate = lastNum + (Math.random() > 0.5) * 2 - 1;
+              candidate = Math.min(3, Math.max(candidate, 0));
+              lastNum = candidate;
+              return candidate;
+            }
+            let newText = chars.map(function(d) {
+              if (d != '|' && isNaN(parseInt(d))) {
+                return d + '|' + newNum();
+              }
+              return '';
+            }).join('');
+            this.innerText = newText.substr(0, newText.length - 1) + '0';
+          })
+        }
+        setInterval(updateTitleGraphs, 100);
       }
     
     });
