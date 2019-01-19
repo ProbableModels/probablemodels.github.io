@@ -7,6 +7,11 @@
   visibility: hidden;
 }
 
+.overhang > * {
+  margin-left: 8%;
+  text-indent: -8%;
+}
+
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
