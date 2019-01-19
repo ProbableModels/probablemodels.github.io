@@ -14,7 +14,7 @@ $dark: #201d1d
 
 // Update Bulma's global variables
 $family-sans-serif: "PoppinsRegular", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-$grey-dark: $brown
+$grey-dark: #444444
 $grey-light: $beige-light
 $info: $purple
 $link: $pink
@@ -22,7 +22,7 @@ $widescreen-enabled: true
 $fullhd-enabled: false
 
 $primary: $pink
-$primary-invert: black
+$primary-invert: $grey-dark
 
 // Update some of Bulma's component variables
 $body-background-color: $beige-lighter
@@ -38,6 +38,9 @@ $box-shadow: 0 5px 10px rgba($pink, 0.4), 0 0 0 1px rgba($pink, 0.1)
 $navbar-height: 3.25rem
 $gap: 64px
 
+$divider-font-size: 3rem
+$divider-color: $grey-dark
+
 .anchor
     top: -1.25*$gap
     display: block
@@ -51,6 +54,7 @@ $gap: 64px
 // Import only what you need from Bulma
 @import "../node_modules/bulma/bulma.sass"
 @import "../node_modules/bulma-carousel/dist/css/bulma-carousel.sass"
+@import "../node_modules/bulma-divider/dist/css/bulma-divider.sass"
 //@import "../node_modules/bulma/sass/utilities/_all.sass"
 //@import "../node_modules/bulma/sass/base/_all.sass"
 //@import "../node_modules/bulma/sass/elements/button.sass"

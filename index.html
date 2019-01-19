@@ -75,7 +75,7 @@
           <p class="title">
               <img src="images/logo_primary_tight.png">
           </p>
-          <p class="subtitle is-size-2-desktop is-size-3-tablet">
+          <p class="subtitle is-size-2-desktop is-size-3-tablet has-text-black">
               Helping to make more ethical futures more probable
           </p>
         </div>
@@ -85,7 +85,7 @@
     <section class="section">
       <a class="anchor" id="sec_mission"></a>
       <div class="container">
-        <h1 class="title">Our Mission</h1>
+        <div class="is-divider" data-content="Our Mission"></div>
         <article class="message">
           <div class="message-body box">
             <ul class="overhang">
@@ -126,7 +126,7 @@
     <section class="section">
       <a class="anchor" id="sec_pubwork"></a>
       <div class="container is-widescreen">
-      <h1 class='title'>Public Work</h1>
+        <div class='is-divider' data-content="Public Work"></div>
         <div class="columns">
           <div class="column is-8">
             <div class="box has-text-right">
@@ -179,7 +179,7 @@
     <section class="section hero is-primary">
       <a class="anchor" id="sec_team"></a>
       <div class="container">
-        <h1 class='title'>Our Team</h1>
+        <div class='is-divider is-primary' data-content="Our Team"></div>
         <div class="box">
           <article class="media is-block-mobile">
             <div class="media-left">
@@ -273,7 +273,7 @@
     <section class="section hero is-primary">
       <a class='anchor' id="sec_partnersclients"></a>
       <div class="container">
-        <h1 class="title">Partners</h1>
+        <div class="is-divider is-primary" data-content="Partners"></div>
         <div class="box">
           <div class='carousel carousel-animated carousel-animate-slide' data-size="3" data-autoplay="true">
             <div class='carousel-container'>
@@ -304,63 +304,65 @@
     </section>
 
     <section class="section">
-      <a class='anchor' id="sec_contact"></a>
-      <div class="container box">
-        <h1 class='title'>Contact Us</h1>
-        <form name="contact_form" action="https://formspree.io/hello@probablemodels.com" method="POST" id="contact-form">
-          <div class="field">
-            <label class="label">Name</label>
-            <p class="control has-icons-left">
-              <input id="contact_name" class="input" placeholder="Full Name" name="name" type="text">
-              <span class="icon is-small is-left">
-                <i class="fa fa-user"></i>
-              </span>
-            </p>
-          </div>
-        
-          <div class="field">
-            <label class="label">Email</label>
-            <p class="control has-icons-left has-icons-right">
-              <input id="contact_email" class="input" placeholder="Full email address" name="email" type="text">
-              <span class="icon is-small is-left">
-                <i class="fa fa-envelope"></i>
-              </span>
-            </p>
-          </div>
-        
-          <div class="field">
-            <label class="label">Organization</label>
-            <p class="control has-icons-left has-icons-right">
-              <input id="contact_organization" class="input" placeholder="Organization or Company" name="organization" type="text">
-              <span class="icon is-small is-left">
-                <i class="fa fa-users"></i>
-              </span>
-            </p>
-          </div>
-        
-          <div class="field">
-            <label class="label">Phone Number</label>
-            <p class="control has-icons-left has-icons-right">
-              <input id="contact_phone" class="input" placeholder="Phone number" name="phone" type="text">
-              <span class="icon is-small is-left">
-                <i class="fa fa-phone"></i>
-              </span>
-            </p>
-          </div>
-        
-          <div class="field">
-            <label class="label">Message</label>
-            <p class="control">
-              <textarea name="contact_message" class="textarea" placeholder="Dear Probable Models..."></textarea>
-            </p>
-          </div>
-        
-          <div class="field is-grouped">
-            <p class="control">
-              <button id="contact_submit" class="button is-primary">Submit</button>
-            </p>
-          </div>
-        </form>
+      <div class="container">
+        <a class='anchor' id="sec_contact"></a>
+        <div class='is-divider' data-content="Contact Us"></div>
+        <div class="box">
+          <form name="contact_form" action="https://formspree.io/hello@probablemodels.com" method="POST" id="contact-form">
+            <div class="field">
+              <label class="label">Name</label>
+              <p class="control has-icons-left">
+                <input id="contact_name" class="input" placeholder="Full Name" name="name" type="text">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-user"></i>
+                </span>
+              </p>
+            </div>
+          
+            <div class="field">
+              <label class="label">Email</label>
+              <p class="control has-icons-left has-icons-right">
+                <input id="contact_email" class="input" placeholder="Full email address" name="email" type="text">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </p>
+            </div>
+          
+            <div class="field">
+              <label class="label">Organization</label>
+              <p class="control has-icons-left has-icons-right">
+                <input id="contact_organization" class="input" placeholder="Organization or Company" name="organization" type="text">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-users"></i>
+                </span>
+              </p>
+            </div>
+          
+            <div class="field">
+              <label class="label">Phone Number</label>
+              <p class="control has-icons-left has-icons-right">
+                <input id="contact_phone" class="input" placeholder="Phone number" name="phone" type="text">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-phone"></i>
+                </span>
+              </p>
+            </div>
+          
+            <div class="field">
+              <label class="label">Message</label>
+              <p class="control">
+                <textarea name="contact_message" class="textarea" placeholder="Dear Probable Models..."></textarea>
+              </p>
+            </div>
+          
+            <div class="field is-grouped">
+              <p class="control">
+                <button id="contact_submit" class="button is-primary">Submit</button>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 

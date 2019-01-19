@@ -4,7 +4,8 @@
   "description": "website for probable models",
   "dependencies": {
     "bulma": "^0.7.2",
-    "bulma-carousel": "^3.0.0"
+    "bulma-carousel": "^3.0.0",
+    "bulma-divider": "^2.0.1"
   },
   "devDependencies": {},
   "repository": {
