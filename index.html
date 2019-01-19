@@ -18,16 +18,16 @@
 
       <title>Probable Models</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
       <!-- Bulma Version 0.7.2-->
       <link rel="stylesheet" href="css/bulma.css" />
       <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="node_modules/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+      
   </head>
   <body>
-    <nav class="navbar is-info is-fixed-top">
+    <nav class="navbar is-primary is-fixed-top">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item">
@@ -55,11 +55,12 @@
             <a class="navbar-item" id="nav_team" href="#sec_team">
               Team
             </a>
-            <!--
+            <a class="navbar-item" id="nav_pubwork" href="#sec_pubwork">
+              Public Work
+            </a>
             <a class="navbar-item" id="nav_partnersclients" href="#sec_partnersclients">
               Partners/Clients
             </a>
-            -->
             <a class="navbar-item" id="nav_contact" href="#sec_contact">
               Contact Us
             </a>
@@ -68,23 +69,24 @@
       </div>
     </nav>
 
-    <section class="hero is-info is-medium">
+    <section class="hero is-primary is-fullheight-with-navbar">
       <div class="hero-body">
         <div class="container has-text-centered">
           <p class="title">
               <img src="images/logo_primary_tight.png">
           </p>
-          <p class="subtitle">
+          <p class="subtitle is-size-2-desktop is-size-3-tablet">
               Helping to make more ethical futures more probable
           </p>
         </div>
       </div>
     </section>
 
-    <section id="sec_mission" class="section">
+    <section class="section">
+      <a class="anchor" id="sec_mission"></a>
       <div class="container">
         <h1 class="title">Our Mission</h1>
-        <article class="message is-primary">
+        <article class="message">
           <div class="message-body">
               To <b>explore</b> technologies that could benefit our communities and world;<br>
               To <b>support</b> purpose-driven organizations in using technology to affect good;<br>
@@ -119,7 +121,8 @@
     </section>
 
 
-    <section class="section hero is-info is-bold" id="sec_team">
+    <section class="section hero is-primary">
+      <a class="anchor" id="sec_team"></a>
       <div class="container">
         <h1 class='title'>Our Team</h1>
         <div class="box">
@@ -211,9 +214,144 @@
       </div>
     </section>
 
-
-    <section class="section" id="sec_contact">
+    <section class="section">
+      <a class="anchor" id="sec_pubwork"></a>
       <div class="container">
+      <h1 class='title'>Public Work</h1>
+        <div class="columns">
+          <div class="column is-8">
+            <div class="box has-text-right">
+              <p class="title"><a href="#">Integrating Ethics within Machine Learning Courses</a></p>
+              <p class="subtitle">ACM Transactions on Computing Education</p>
+              <p class="has-text-justified">This paper establishes and
+              addresses the current gap in ethics education in Machine Learning
+              courses and demonstrates (1) the need for additional
+              ethics to be taught within an ML educational setting, (2) a
+              structured set of questions useful for identifying and addressing
+              potential issues within an ML project and (3) novel course models
+              that provide examples for how to practically teach ML ethics
+              without skipping core course content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-8 is-offset-4">
+            <div class="box has-text-left">
+              <p class="title"><a href="https://arxiv.org/abs/1706.09976">The Authority of "Fair" in Machine Learning</a></p>
+              <p class="subtitle">FATML Conference Paper</p>
+              <p class="has-text-justified">We argue for the adoption of a normative definition of
+              fairness within the machine learning community and end by
+              suggesting ways to incorporate a broader community and generate
+              further debate around how to decide what is fair in ML. </p>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-8">
+            <div class="box has-text-right">
+              <p class="title"><a href="http://mwskirpan.com/files/QSelfEd.pdf">Quantified Self</a></p>
+              <p class="subtitle">CU Boulder Performance</p>
+              <p class="has-text-justified"> With the support of the James S.
+              and John L. Knight Foundation, we created and produced a
+              performance meant to discuss issues of technology ethics with the
+              public. Alongside a team of 45 engineers, artists, and dramatists
+              constructed an immersive experience that allowed people to
+              interact with and question their relationship with data. Each
+              audience member witnessed a sci-fi drama, conversed with actors
+              and the audience, and played with up to 12 interactive data
+              exhibits. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--
+    <section class="section" id="sec_pubwork2">
+      <div class="container">
+      <h1 class='title'>Public Work</h1>
+        <div class="tile is-ancestor">
+          <div class="tile is-8 is-vertical">
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <p class="title"><a href="https://arxiv.org/abs/1706.09976">The Authority of "Fair" in Machine Learning</a></p>
+                <p class="subtitle">FATML Conference Paper</p>
+                <p class="has-text-justified">We argue for the adoption of a normative definition of
+                fairness within the machine learning community and end by
+                suggesting ways to incorporate a broader community and generate
+                further debate around how to decide what is fair in ML. </p>
+              </div>
+            </div>
+            <div class="tile">
+              <div class="tile is-parent">
+                <div class="tile is-child box">
+                  <p class="title"><a href="http://mwskirpan.com/files/QSelfEd.pdf">Quantified Self</a></p>
+                  <p class="subtitle">CU Boulder Performance</p>
+                  <p class="has-text-justified"> With the support of the James S.
+                  and John L. Knight Foundation, we created and produced a
+                  performance meant to discuss issues of technology ethics with the
+                  public. Alongside a team of 45 engineers, artists, and dramatists
+                  constructed an immersive experience that allowed people to
+                  interact with and question their relationship with data. Each
+                  audience member witnessed a sci-fi drama, conversed with actors
+                  and the audience, and played with up to 12 interactive data
+                  exhibits. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              <p class="title">Integrating Ethics within Machine Learning Courses</p>
+              <p class="subtitle">ACM Transactions on Computing Education</p>
+              <p class="has-text-justified">This paper establishes and
+              addresses the current gap in ethics education in Machine Learning
+              courses and demonstrates (1) the need for additional
+              ethics to be taught within an ML educational setting, (2) a
+              structured set of questions useful for identifying and addressing
+              potential issues within an ML project and (3) novel course models
+              that provide examples for how to practically teach ML ethics
+              without skipping core course content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <section class="section hero is-primary">
+      <a class='anchor' id="sec_partnersclients"></a>
+      <div class="container">
+        <h1 class="title">Partners</h1>
+        <div class="box">
+          <div class='carousel carousel-animated carousel-animate-slide' data-size="3" data-autoplay="true">
+            <div class='carousel-container'>
+              <div class='carousel-item is-active'>
+                <figure class="image is-2by1"><img src="images/partners/bricolage.png"></figure>
+              </div>
+              <div class='carousel-item'>
+                <figure class="image is-2by1"><img src="images/partners/cmu.png"></figure>
+              </div>
+              <div class='carousel-item'>
+                <figure class="image is-2by1"><img src="images/partners/cf.png"></figure>
+              </div>
+            </div>
+            <div class="carousel-navigation is-overlay">
+              <div class="carousel-nav-left">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+              </div>
+              <div class="carousel-nav-right">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <a class='anchor' id="sec_contact"></a>
+      <div class="container box">
         <h1 class='title'>Contact Us</h1>
         <form name="contact_form" action="https://formspree.io/hello@probablemodels.com" method="POST" id="contact-form">
           <div class="field">
@@ -259,7 +397,7 @@
           <div class="field">
             <label class="label">Message</label>
             <p class="control">
-              <textarea name="contact_message" class="textarea" placeholder="Dear Community Forge..."></textarea>
+              <textarea name="contact_message" class="textarea" placeholder="Dear Probable Models..."></textarea>
             </p>
           </div>
         
@@ -267,16 +405,13 @@
             <p class="control">
               <button id="contact_submit" class="button is-primary">Submit</button>
             </p>
-            <p class="control">
-              <button class="button is-primary">Cancel</button>
-            </p>
           </div>
         </form>
       </div>
     </section>
 
 
-    <footer class="footer">
+    <footer class="footer hero is-primary">
       <div class="content has-text-centered">
         <p>
           <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br>
@@ -288,6 +423,7 @@
   </body>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
     
       // Get all "navbar-burger" elements
       const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);

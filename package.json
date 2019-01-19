@@ -1,0 +1,19 @@
+{
+  "name": "probablemodels.com",
+  "version": "1.0.0",
+  "description": "website for probable models",
+  "dependencies": {
+    "bulma": "^0.7.2",
+    "bulma-carousel": "^3.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProbableModels/probablemodels.github.io.git"
+  },
+  "author": "Micha Gorelick <micha@probablemodels.com>",
+  "bugs": {
+    "url": "https://github.com/ProbableModels/probablemodels.github.io/issues"
+  },
+  "homepage": "https://probablemodels.com/"
+}
