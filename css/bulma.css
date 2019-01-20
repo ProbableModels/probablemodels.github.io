@@ -19,6 +19,10 @@
   text-indent: -8%;
 }
 
+.section {
+  border-bottom: 0.15rem solid rgba(255, 255, 255, 0.5);
+}
+
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
