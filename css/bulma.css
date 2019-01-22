@@ -23,6 +23,15 @@
   border-bottom: 0.15rem solid rgba(255, 255, 255, 0.5);
 }
 
+.princ-list {
+  margin-left: 2em;
+  font-size: 1.25em;
+}
+
+#sec_team {
+  background-color: #FA7C91;
+}
+
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
