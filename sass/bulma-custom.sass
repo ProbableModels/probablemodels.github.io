@@ -25,6 +25,9 @@ $fullhd-enabled: false
 $primary: $pink
 $primary-invert: $grey-dark
 
+$secondary: $purple
+$secondary-invert: $grey-light
+
 // Update some of Bulma's component variables
 $body-background-color: $beige-lighter
 $control-border-width: 2px
@@ -34,7 +37,7 @@ $border: $pink
 $text: $dark
 
 $box-background-color: $beige-lightest
-$box-shadow: 0 5px 10px rgba($pink, 0.4), 0 0 0 1px rgba($pink, 0.1)
+$box-shadow: 0 5px 10px rgba($secondary, 0.7), 0 0 0 1px rgba($secondary, 0.7)
 
 $navbar-height: 3.25rem
 $gap: 64px
@@ -54,18 +57,31 @@ $divider-color: $grey-dark
     visibility: hidden
 
 .overhang > *
-  margin-left: 8%
-  text-indent: -8%
+    margin-left: 8%
+    text-indent: -8%
 
 .section
-  border-bottom: 0.15rem solid rgba(white, 0.5)
+    border-bottom: 0.15rem solid rgba($secondary, 0.25)
 
-.princ-list
-  margin-left: 2em
-  font-size: 1.25em
 
-#sec_team
-  background-color: $primary
+.is-services
+    font-size: 1.25em
+
+.box > .subtitle
+    text-align: justify
+
+p > a
+    color: $secondary !important
+    text-decoration: underline
+    text-decoration-color: $primary
+    text-decoration-style: double
+    &:hover
+        text-decoration-style: wavy
+    &:visited
+        text-decoration-style: solid
+      
+      
+
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/bulma.sass"
