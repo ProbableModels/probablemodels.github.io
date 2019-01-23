@@ -80,7 +80,7 @@
     <section class="section">
       <a class="anchor" id="sec_mission"></a>
       <div class="container">
-        <h1 class='title has-text-centered'>Our Mission</h1>
+        <h1 class='title has-data has-text-centered'>Our Mission</h1>
         <p class="subtitle is-size-3-desktop is-size-4-touch has-text-centered-tablet has-text-justified-mobile">We want to see the technology industry move forward
           with a strong moral compass. Using cross-disciplinary teqchniques and our expertise in
           data, applied engineering, and ethics, we implement projects and support organizations in responsible, smart decision-making.
@@ -147,7 +147,7 @@
     <section class="section">
       <a class="anchor" id="sec_services"></a>
       <div class="container">
-        <h1 class='title has-text-centered'>Our Services</h1>
+        <h1 class='title has-data has-text-centered'>Our Services</h1>
         <div class="columns">
           <div class="column is-flex">
             <div class="box">
@@ -201,7 +201,7 @@
     <section class="section hero is-primary">
       <a class="anchor" id="sec_pubwork"></a>
       <div class="container is-widescreen">
-        <h1 class='title has-text-centered'>Public Work</h1>
+        <h1 class='title has-data has-text-centered'>Public Work</h1>
         <div class="columns">
           <div class="column is-8">
             <div class="box has-text-right-desktop">
@@ -254,7 +254,7 @@
     <section class="section hero is-primary">
       <a class="anchor" id="sec_team"></a>
       <div class="container">
-        <h1 class='title has-text-centered'>Our Team</h1>
+        <h1 class='title has-data has-text-centered'>Our Team</h1>
         <div class="box">
           <article class="media is-block-mobile">
             <div class="media-left">
@@ -380,7 +380,7 @@
     <section class="section is-primary">
       <a class='anchor' id="sec_partnersclients"></a>
       <div class="container">
-        <h1 class='title has-text-centered'>Partners</h1>
+        <h1 class='title has-data has-text-centered'>Partners</h1>
         <div class="box">
           <div class='carousel carousel-animated carousel-animate-slide' data-size="3" data-autoplay="true">
             <div class='carousel-container'>
@@ -416,7 +416,7 @@
     <section class="section">
       <a class='anchor' id="sec_contact"></a>
       <div class="container">
-        <h1 class='title has-text-centered'>Contact Us</h1>
+        <h1 class='title has-data has-text-centered'>Contact Us</h1>
         <div class="box">
           <form name="contact_form" action="https://formspree.io/hello@probablemodels.com" method="POST" id="contact-form">
             <div class="field">
@@ -513,31 +513,66 @@
 
           });
         });
-
-        function updateTitleGraphs() {
-          $('h1').each(function() {
-            let chars = this.innerText.toLowerCase().split('');
-            let lastNum = Math.floor(Math.random() * 4);
-            let newChars = [];
-            newNum = function() {
-              let candidate = lastNum + (Math.random() > 0.5) * 2 - 1;
-              candidate = Math.min(3, Math.max(candidate, 0));
-              lastNum = candidate;
-              return candidate;
-            }
-            let newText = chars.map(function(d) {
-              if (d != '|' && isNaN(parseInt(d))) {
-                return d + '|' + newNum();
-              }
-              return '';
-            }).join('');
-            this.innerText = newText.substr(0, newText.length - 1) + '0';
-          })
-        }
-        updateTitleGraphs();
-        setInterval(updateTitleGraphs, 10000);
       }
 
+      updateTitleGraphs();
+      setInterval(updateTitleGraphs, 10000);
+      var anim = null;
+      $('.has-data').dblclick(() => {
+        if (anim === null) {
+            anim = window.setInterval(updateTitleGraphs, 150);
+        } else {
+            window.clearInterval(anim);
+            anim=null;
+        }
+      })
     });
+
+    function updateTitleGraphs() {
+      let step_number = function(n) {
+        n += parseInt(Math.random() * 3) - 1;
+        return Math.min(3, Math.max(n, 0));
+      }
+      $('.has-data').each(function() {
+        if ($(this).prop('data-levels') === undefined) {
+            let chars = this.innerText.toLowerCase().split('');
+            let num = Math.floor(Math.random() * 4);
+            let values = chars.map(function(d) {
+                if (d != ' ') {
+                    return num;
+                }
+                return 0;
+            })
+            $(this).prop('data-levels', values)
+            $(this).prop('data-value', chars)
+        }
+        
+        let chars = $(this).prop('data-value');
+        let values = $(this).prop('data-levels');
+        
+        var newText = chars.map(function(c, i) {
+            if (c == ' ') {
+              return c + "\\";
+            }
+            if (i > 0 && (c=="a" || chars[i-1] == "a")) {
+                let v = step_number(values[i-1]);
+                values[i] = Math.min(2, v);
+            } else if (i < chars.length && chars[i+1] == 'a') {
+                let v = step_number(values[i+1]);
+                values[i] = Math.min(2, v);
+            } else if (c=="i" && i > 0) {
+                values[i] = step_number(values[i-1]);
+            } else {
+                values[i] = step_number(values[i]);
+            }
+            return c + '|' + values[i];
+        }).join('');
+
+        this.innerText = '§0' + newText.substr(0, newText.length - 1) + '0';
+      })
+    }
+    
+
+    
   </script>
 </html>

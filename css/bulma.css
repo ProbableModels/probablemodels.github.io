@@ -1,20 +1,17 @@
 @charset "UTF-8";
 @import url("https://fontlibrary.org/face/poppins");
 @import url("https://fontlibrary.org/face/datalegreya");
-.container h1:nth-of-type(1) {
+h1.has-data {
   font-family: DatalegreyaDot;
   font-size: 4.5rem;
-  font-weight: 400; }
+  font-weight: 400;
+  -webkit-transform: translate3d(0, 0, 0); }
 
 .anchor {
   top: -80px;
   display: block;
   position: relative;
   visibility: hidden; }
-
-.overhang > * {
-  margin-left: 8%;
-  text-indent: -8%; }
 
 .section {
   border-bottom: 0.15rem solid rgba(138, 77, 118, 0.25); }

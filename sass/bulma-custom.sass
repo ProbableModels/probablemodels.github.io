@@ -45,10 +45,11 @@ $gap: 64px
 $divider-font-size: 5rem
 $divider-color: $grey-dark
 
-.container h1:nth-of-type(1)
+h1.has-data
     font-family: DatalegreyaDot
     font-size: 4.5rem
     font-weight: 400
+    -webkit-transform: translate3d(0, 0, 0)
 
 .anchor
     top: -1.25*$gap
@@ -56,13 +57,8 @@ $divider-color: $grey-dark
     position: relative
     visibility: hidden
 
-.overhang > *
-    margin-left: 8%
-    text-indent: -8%
-
 .section
     border-bottom: 0.15rem solid rgba($secondary, 0.25)
-
 
 .is-services
     font-size: 1.25em
