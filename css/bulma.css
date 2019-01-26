@@ -8,7 +8,7 @@ h1.has-data {
   -webkit-transform: translate3d(0, 0, 0); }
 
 .anchor {
-  top: -80px;
+  top: -64px;
   display: block;
   position: relative;
   visibility: hidden; }
@@ -1849,7 +1849,7 @@ a.box:active {
 .input,
 .textarea {
   background-color: white;
-  border-color: rgba(250, 124, 145, 0.4);
+  border-color: rgba(138, 77, 118, 0.4);
   color: #363636;
   box-shadow: none;
   max-width: 100%;
@@ -2068,7 +2068,7 @@ a.box:active {
     padding-left: 1em; }
   .select select {
     background-color: white;
-    border-color: rgba(250, 124, 145, 0.4);
+    border-color: rgba(138, 77, 118, 0.4);
     color: #363636;
     cursor: pointer;
     display: block;

@@ -29,7 +29,7 @@
     <nav class="navbar is-primary is-fixed-top">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item">
+          <a class="navbar-item" href="#sec_home">
              <img src="images/logo_triangle_tight.png" alt="Logo">
           </a>
           <span class="navbar-burger burger" data-target="navbarMenuItems">
@@ -483,27 +483,26 @@
   </body>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-      // Check if there are any navbar burgers
-      if ($navbarBurgers.length > 0) {
-
-        // Add a click event on each of them
-        $navbarBurgers.forEach( el => {
-          el.addEventListener('click', () => {
-
-            // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-
-          });
+      // Close mobile & tablet menu on item click
+      $('.navbar-item').each(function(e) {
+        $(this).click(function(){
+          if($('.navbar-burger').hasClass('is-active')){
+            $('.navbar-burger').removeClass('is-active');
+            $('.navbar-menu').removeClass('is-active');
+          }
+          $('html, body').animate({
+              scrollTop: ($(this.attributes['href'].value).offset().top)
+          }, 250);
+          return false;
         });
-      }
+      });
+
+      // Open or Close mobile & tablet menu
+      $('.navbar-burger').click(function () {
+          console.log("asdf")
+        $('.navbar-burger').toggleClass('is-active');
+        $('.navbar-menu').toggleClass('is-active');
+      });
 
       updateTitleGraphs();
       setInterval(updateTitleGraphs, 10000);
