@@ -22,6 +22,9 @@ h1.has-data {
 .box > .subtitle {
   text-align: justify; }
 
+.is-portrait {
+  max-width: 300px; }
+
 p > a {
   color: #8A4D76 !important;
   text-decoration: underline;
