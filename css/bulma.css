@@ -2,7 +2,7 @@
 @import url("https://fontlibrary.org/face/poppins");
 @import url("https://fontlibrary.org/face/datalegreya");
 h1.has-data {
-  font-family: DatalegreyaDot;
+  font-family: DatalegreyaDot, "PoppinsRegular", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 4.5rem;
   font-weight: 400;
   -webkit-transform: translate3d(0, 0, 0); }

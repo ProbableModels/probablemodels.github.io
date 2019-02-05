@@ -509,7 +509,10 @@
         $('.navbar-burger').toggleClass('is-active');
         $('.navbar-menu').toggleClass('is-active');
       });
+    })
 
+    $(window).bind('load', function() {
+        console.log("loaded")
       updateTitleGraphs();
       setInterval(updateTitleGraphs, 10000);
       var anim = null;
