@@ -23,7 +23,8 @@ h1.has-data {
   text-align: justify; }
 
 .is-portrait {
-  max-width: 300px; }
+  max-width: 300px;
+  border: 2.5px dashed #8A4D76; }
 
 p > a {
   color: #8A4D76 !important;
